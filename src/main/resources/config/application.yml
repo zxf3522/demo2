@@ -1,0 +1,19 @@
+datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/orcl
+    name:
+    username: report
+    password: Aa123456
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+spring:
+    profiles:
+      active: #spring.profiles.active#
+    thymeleaf:
+      mode: XHTML
+    jpa:
+        database-platform: org.hibernate.dialect.OracleDialect
+        database: ORACLE
+        show-sql: true
+        properties:
+            hibernate.cache.use_second_level_cache: true
+            hibernate.cache.use_query_cache: false
+            hibernate.generate_statistics: true

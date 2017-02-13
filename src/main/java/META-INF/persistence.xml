@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="persistenceUnit">
+        <class>com.example.domain.StudentServer</class>
+        <class>com.example.domain.City</class>
+        <class>com.example.domain.Province</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@//localhost:1521/orcl"/>
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
+            <property name="hibernate.connection.username"/>
+            <property name="hibernate.connection.password"/>
+        </properties>
+    </persistence-unit>
+</persistence>
